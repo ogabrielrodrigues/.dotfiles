@@ -1,0 +1,22 @@
+format = """
+$directory$git_branch$git_status$golang$nodejs$fill$cmd_duration
+$character
+"""
+
+[directory]
+fish_style_pwd_dir_length = 100
+
+[golang]
+format = 'via [$symbol ($version )](bold cyan)'
+symbol = ''
+
+[nodejs]
+format = 'via [$symbol ($version )](bold green)'
+symbol = ""
+
+[fill]
+symbol = ' '
+
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
